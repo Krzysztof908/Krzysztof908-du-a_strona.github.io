@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: blue;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none ;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: rgb(241, 236, 236);
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="background:rgb(45, 228, 28);padding:5px">
+  <h4 style="text-align:center">Zmień rozmiar okna przeglądarki, aby zobaczyć efekt responsywności.</h4>
+</div>
+
+<div class="header">
+  <h1>Moja strona internetowa</h1>
+  <p>Z <i><b>elastycznym</b></i> układem.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">O mnie</a>
+  <a href="#">Kontakt</a>
+  <a href="#">Strony internetowe</a>
+  <a href="#">Opis</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>O mnie</h2>
+    <h5>Moje zdjęcia:</h5>
+    <img src="./w3images/underwater.jpg" style="width:100%">
+    <p>Trochę informacji o mnie</p>
+    <h3>Więcej tekstu</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <img src="https://tse3.mm.bing.net/th/id/OIP.fbGeI4Me1dCX1Ue8DolIfwHaFB?rs=1&pid=ImgDetMain" style="width:100%">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.64zzQzIe-6jCOuX3N8A-lgHaE0?rs=1&pid=ImgDetMain" style="width:100%">
+  </div>
+  <div class="main">
+    <h2>Powódź we Wrocławiu</h2>
+    <h5>Zalane obrzeża Wrocławia,  Wrzesień 19, 2024</h5>
+    <img src="https://dobrapogoda24.pl/uploads/assets/10429/full_Pow%C3%B3d%C5%BA_Ma%C5%82opolska_18_lipca_2021.jpg" style="width:100%">
+    <p>Stanęłam na moście i ogarnęło mnie przerażenie, albowiem woda pod mostem płynęła w przeciwnym kierunku. Zrozumiałam, że jest to tak zwana cofka z Odry, że poziom wody w Odrze jest tak wysoki, że już wlewa się do Oławy – wspominała w Polskim Radiu Agnieszka Dubaniowska, mieszkanka Wrocławia, to, co zobaczyła tuż przed zalaniem miasta przez powódź w lipcu 1997 roku.</p>
+    <br>
+    <h2>Nagłówek</h2>
+    <h5>Wrocław przetrwał, Wrzesień 25, 2024</h5>
+    <img src="https://s.inyourpocket.com/img/text/poland/wroclaw/wroclaw-islands.jpg" style="width:100%">
+    <p>W 1997 roku przez Wrocław w szczytowym momencie płynęło 3700 m3/s. Wówczas Wrocławski Węzeł Wodny był w stanie przyjąć 2200 m3/s. Dziś chroni nas zarówno zespół polderów i zbiorników przed Wrocławiem, jak i zmodernizowany został cały Wrocławski Węzeł Wodny. Przekonajcie się, jakie prace wykonano w ostatnich latach, aby zabezpieczyć Wrocław przed powodzią.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
